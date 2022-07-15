@@ -16,3 +16,10 @@ app.get("/about", function(request, response){
 app.listen(3000, function(){
     console.log("Server started on port 3000");
 });
+
+
+// heroku notes on config vars:
+// heroku config:set API_KEY=<your api key>
+// heroku config:get API_KEY
+// const apiKey = process.env.API_KEY;
+// auth:`uname:${String(apiKey)}`
